@@ -26,6 +26,7 @@ function App() {
   async function getPokemonIndex() {
     let pokemonData;
 
+    // You are waiting for this await function to return a promise
     await fetch('https://pokeapi.co/api/v2/pokemon/' + text)
       .then(response => {
         if (!response.ok) {
